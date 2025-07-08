@@ -89,6 +89,12 @@ ol {
   align-items: flex-start;
 }
 
+.search-form__fieldset-title {
+  line-height: 1;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
 /* Стили для блока с заголовком */
 
 .content__details {
@@ -98,6 +104,15 @@ ol {
 
 .title {
   margin-bottom: 26px;
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  line-height: 0.94;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
 }
 
 /* Стили для блока со списком карточек*/
@@ -116,13 +131,41 @@ ol {
   gap: 30px;
 }
 
+.content__card-link {
+  text-decoration: none;
+  color: #fff;
+}
+
 .content__video-card {
   display: flex;
   align-items: flex-start;
 }
 
 .content__video-card-description-container {
+  max-width: 196px;
   flex-grow: 1;
+}
+
+.content__video-card-title {
+  font-family: Oswald, sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 6px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.content__video-card-description {
+  line-height: 0.9;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {
