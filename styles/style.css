@@ -104,6 +104,7 @@ ol {
 }
 
 .search-form__fieldset-title {
+  font-size: 18px;
   line-height: 1;
   font-weight: 400;
   padding-bottom: 5px;
@@ -127,7 +128,7 @@ ol {
   border-bottom: 1px solid #fff;
   padding: 2px 14px 2px 0;
   color: inherit;
-  background-color: #000;
+  background-color: transparent;
   appearance: none;
 }
 
@@ -172,6 +173,44 @@ ol {
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
   cursor: pointer;
+}
+
+/* Общие стили для кнопок */
+
+.button {
+  color: inherit;
+  border: 1px solid #fff;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  background-color: transparent;
+  padding: 6px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: rgba(84, 80, 80, 1);
+}
+
+/* Стили для кнопки в форме */
+
+.search-form__submit-button {
+  width: 194px;
+  align-self: flex-end;
 }
 
 /* Стили для блока с заголовком */
@@ -252,4 +291,10 @@ ol {
   height: 103px;
   object-fit: cover;
   object-position: center;
+}
+
+/* Стили для кнопки в списке крточек */
+
+.more-button {
+  width: 100%;
 }
