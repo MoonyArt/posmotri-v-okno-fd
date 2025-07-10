@@ -16,6 +16,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -51,12 +54,6 @@ ol {
 }
 
 /* Стилизация основного лейаута страницы */
-
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .content {
   width: 1140px;
@@ -125,10 +122,10 @@ ol {
   line-height: 1;
   font-weight: 400;
   border: none;
-  border-top: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  padding: 2px 0;
   color: inherit;
+  border-top: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  padding: 2px 0;
   background-color: transparent;
   appearance: none;
 }
@@ -269,7 +266,7 @@ ol {
 }
 
 .content__card-link_current {
-  background-color: transparent;
+  background-color: #545050;
 }
 
 .content__card-link:focus {
